@@ -10,24 +10,27 @@
 	<h1>Most things start as chaos and finally become a orderly mess.</h1>
 	<p><?php
 			
-			        // create curl resource
+			// create curl resource
 			$ch = curl_init();
-			$url = "https://corona.lmao.ninja/all";
+			$url = "https://corona.lmao.ninja/countries";
 			//$url = "https://api.twitter.com/1/help/configuration.json";
 
-			// set url
 			curl_setopt($ch, CURLOPT_URL, $url);
-
-			//return the transfer as a string
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
-			// $output contains the output string
 			$output = curl_exec($ch);
 
 
 			// close curl resource to free up system resources
 			curl_close($ch);
-			var_dump(json_decode($output, true));
+
+			$arr_result = json_decode($output, true);
+
+			echo "<p>Germany cases: ".$arr_result["Germany"]["cases"]."</p>";
+			echo "<p>Belgium cases: ".$arr_result["Belgium"]["cases"]."</p>";
+			echo "<p>Portugal cases: ".$arr_result["Portugal"]["cases"]."</p>";
+			
+			
 
 		?>
 	</p>
