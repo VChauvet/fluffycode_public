@@ -27,7 +27,7 @@
 
 			// close curl resource to free up system resources
 			curl_close($ch);
-			var_dump(json_decode($ch, true));
+			var_dump(json_decode($output, true));
 
 		?>
 	</p>
