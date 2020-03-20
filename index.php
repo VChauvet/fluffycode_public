@@ -27,13 +27,7 @@
 
 			// close curl resource to free up system resources
 			curl_close($ch);
-			print $output["cases"];
-
-			if ($output === false){
-				echo "nope";
-			} else if ($output === true){
-				echo "yaza";
-			}
+			var_dump(json_decode($ch, true));
 
 		?>
 	</p>
