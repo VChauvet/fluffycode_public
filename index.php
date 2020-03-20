@@ -27,7 +27,7 @@
 
 			// close curl resource to free up system resources
 			curl_close($ch);
-			print $output;
+			print $output["cases"];
 
 			if ($output === false){
 				echo "nope";
