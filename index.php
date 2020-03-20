@@ -26,9 +26,9 @@
 
 			$arr_result = json_decode($output, true);
 
-			echo "<p>Germany cases: ".$arr_result["Germany"]["cases"]."</p>";
-			echo "<p>Belgium cases: ".$arr_result["Belgium"]["cases"]."</p>";
-			echo "<p>Portugal cases: ".$arr_result["Portugal"]["cases"]."</p>";
+			echo "<p>Germany cases: ".$arr_result[3]["cases"].", Deaths today: ".$arr_result[3]["cases"]."</p>";
+			echo "<p>Belgium cases: ".$arr_result[12]["cases"].", Deaths today: ".$arr_result[12]["cases"]."</p>";
+			echo "<p>Portugal cases: ".$arr_result[17]["cases"].", Deaths today: ".$arr_result[17]["cases"]."</p>";
 			
 			
 
