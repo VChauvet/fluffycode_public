@@ -1,0 +1,51 @@
+body {
+  background-color: darkslategrey;
+  display: grid;
+  place-items: center;
+}
+
+#root {
+  max-width: 600px;
+  background-color: rgb(65, 119, 119);
+}
+
+.top-bar{
+  top: 0;
+  position: static;
+  overflow: auto;
+  background-color: tomato;
+}
+.content-selector {
+  overflow: auto;
+}
+.content-selector ul{
+  list-style-type: none;
+  padding: unset;
+  margin: unset;
+}
+.content-selector li{
+  float: left;
+
+}
+.content-selector li a{
+  color: black;
+  display: inline-block;
+  padding: 10px;
+  background-color: turquoise;
+}
+.content-selector li a:hover,
+.content-selector li a.active
+{
+  background-color: violet;
+}
+.content-selector a:link,
+.content-selector a:visited,
+.content-selector a:hover,
+.content-selector a:active
+{
+  color: black;
+  text-decoration: unset;
+}
+.content-selector::after {
+  clear: both;
+}
