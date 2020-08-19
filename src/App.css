@@ -1,51 +1,65 @@
+h1 {
+  font-family: "Oswald";
+  font-weight: 200;
+  font-size: 40px;
+}
+
 body {
-  background-color: darkslategrey;
+  background-color: #2c3133;
   display: grid;
   place-items: center;
 }
 
 #root {
-  max-width: 600px;
-  background-color: rgb(65, 119, 119);
+  max-width: 1000px;
+  background-color: #f7f5cf;
 }
 
-.top-bar{
+.top-bar {
   top: 0;
+  padding-left: 30px;
   position: static;
   overflow: auto;
-  background-color: tomato;
+  color: #ffb350;
+  background-color: #2a5b65;
 }
+
 .content-selector {
   overflow: auto;
 }
-.content-selector ul{
+.content-selector ul {
   list-style-type: none;
   padding: unset;
   margin: unset;
 }
-.content-selector li{
+.content-selector li {
   float: left;
-
 }
-.content-selector li a{
-  color: black;
+.content-selector li a {
+  color: #f7f5cf;
   display: inline-block;
-  padding: 10px;
-  background-color: turquoise;
+  padding: 10px 18px;
+  background-color: #2c3133;
 }
-.content-selector li a:hover,
-.content-selector li a.active
-{
-  background-color: violet;
+.content-selector li a.active, .content-selector li a:hover, .content-selector li a:active {
+  background-color: #2a5b65;
+  color: #ffb350;
 }
-.content-selector a:link,
-.content-selector a:visited,
-.content-selector a:hover,
-.content-selector a:active
-{
-  color: black;
+.content-selector li a:link, .content-selector li a:visited, .content-selector li a:hover, .content-selector li a:active {
   text-decoration: unset;
+}
+.content-selector li .brackets {
+  position: absolute;
+  margin-left: -6px;
+  margin-top: -1px;
+  float: left;
+  height: 23px;
+  width: 8px;
+  border: 2px solid #ffb350;
+  border-right-width: 0px;
 }
 .content-selector::after {
   clear: both;
 }
+
+/*# sourceMappingURL=App.css.map */

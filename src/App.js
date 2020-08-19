@@ -10,14 +10,14 @@ class App extends Component {
     return (
       <HashRouter>
       <div className="top-bar">
-        <h1>MA SITE!</h1>
+        <h1>fluffycode</h1>
       </div>  
       <div>
         <div className="content-selector">
           <ul>
-            <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/cv">Curriculum vitae</NavLink></li>
-            <li><NavLink to="/projects">Projects</NavLink></li>
+            <li><NavLink exact to="/"><div className="brackets" />Home</NavLink></li>
+            <li><NavLink to="/cv"><div className="brackets" />Curriculum vitae</NavLink></li>
+            <li><NavLink to="/projects"><div className="brackets" />Projects</NavLink></li>
           </ul>
         </div>
         <div className="content">

@@ -1,0 +1,85 @@
+//document sizes
+$page-max-width: 1000px;
+
+
+//color schemes
+$gold: #ffb350;
+$beige: #f7f5cf;
+$blue: #2a5b65;
+$grey: #2c3133;
+
+$backdrop-color: $grey;
+$front-color: $beige;
+$topbar-color: $blue;
+$topbar-font-color: $gold;
+$basic-font-color: black;
+$menu-font-color: $beige;
+$menu-background-color: $grey;
+$menu-active-font-color: $gold;
+$menu-active-background-color: $blue;
+
+
+h1 {
+  font-family: 'Oswald';
+  font-weight: 200;
+  font-size: 40px;
+}
+
+body {
+    background-color: $backdrop-color;
+    display: grid;
+    place-items: center;
+  }
+  
+  #root {
+    max-width: $page-max-width;
+    background-color: $front-color;
+  }
+  
+  .top-bar{
+    top: 0;
+    padding-left: 30px;
+    position: static;
+    overflow: auto;
+    color: $topbar-font-color;
+    background-color: $topbar-color;
+  }
+  .content-selector {
+    overflow: auto;
+    ul {
+        list-style-type: none;
+        padding: unset;
+        margin: unset;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        color: $menu-font-color;
+        display: inline-block;
+        padding: 10px 18px;
+        background-color: $menu-background-color;
+
+        &.active, &:hover, &:active {
+            background-color: $menu-active-background-color;
+            color: $menu-active-font-color;
+        }
+
+        &:link, &:visited, &:hover, &:active {
+            text-decoration: unset;
+        }
+    }
+    li .brackets {
+      position: absolute;
+      margin-left: -6px;
+      margin-top: -1px;
+      float: left;
+      height: 23px;
+      width: 8px;
+      border: 2px solid $gold;
+      border-right-width: 0px;
+    }
+    &::after {
+        clear: both;
+    }
+  }
