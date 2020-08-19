@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import CV from './Pages/CV';
 import Projects from './Pages/Projects';
 
+
 class App extends Component {
   render() {
     return (
@@ -16,7 +17,7 @@ class App extends Component {
         <div className="content-selector">
           <ul>
             <li><NavLink exact to="/"><div className="brackets" />Home</NavLink></li>
-            <li><NavLink to="/cv"><div className="brackets" />Curriculum vitae</NavLink></li>
+            <li><NavLink to="/cv"><div className="brackets" />Curriculum Vitae</NavLink></li>
             <li><NavLink to="/projects"><div className="brackets" />Projects</NavLink></li>
           </ul>
         </div>

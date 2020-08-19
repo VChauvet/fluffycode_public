@@ -10,7 +10,7 @@ WebFont.load({
   }
 });
 
-document.title = "fluffycode"
+document.title = "[fluffycode"
 
 ReactDOM.render(
   <React.StrictMode>

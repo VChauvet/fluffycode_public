@@ -1,18 +1,40 @@
+@media (max-width: 1000px -1) {
+  #root {
+    width: 100%;
+  }
+}
+@media (min-width: 1000px) {
+  #root {
+    width: 1000px;
+  }
+}
 h1 {
   font-family: "Oswald";
   font-weight: 200;
   font-size: 40px;
 }
 
+h2 {
+  font-weight: 200;
+  font-size: 40px;
+  color: #2c3133;
+  margin: 10px 15px;
+}
+
 body {
   background-color: #2c3133;
   display: grid;
   place-items: center;
+  color: #2c3133;
 }
 
 #root {
   max-width: 1000px;
   background-color: #f7f5cf;
+}
+
+.content {
+  padding: 5px 20px;
 }
 
 .top-bar {
@@ -60,6 +82,26 @@ body {
 }
 .content-selector::after {
   clear: both;
+}
+
+.section-title {
+  font-weight: 200;
+  font-size: 20px;
+  color: #2c3133;
+}
+
+.section {
+  margin: 5px 0;
+}
+.section .bracket-corner {
+  position: relative;
+  width: 8px;
+  border-bottom: 2px solid #ffb350;
+}
+.section .section-content {
+  color: #34727e;
+  border-left: 2px solid #ffb350;
+  padding: 4px 10px;
 }
 
 /*# sourceMappingURL=App.css.map */

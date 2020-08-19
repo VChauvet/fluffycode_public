@@ -1,12 +1,23 @@
 //document sizes
-$page-max-width: 1000px;
-
+$page-width: 1000px;
+@media (max-width: $page-width -1) {
+  #root {
+    width: 100%;
+  }
+}
+@media (min-width: $page-width) {
+  #root {
+    width: $page-width;
+  }
+}
 
 //color schemes
 $gold: #ffb350;
 $beige: #f7f5cf;
 $blue: #2a5b65;
 $grey: #2c3133;
+
+$blue-lighten: lighten($color: $blue, $amount: 7); 
 
 $backdrop-color: $grey;
 $front-color: $beige;
@@ -24,16 +35,27 @@ h1 {
   font-weight: 200;
   font-size: 40px;
 }
+h2 {
+  font-weight: 200;
+  font-size: 40px;
+  color: $grey;
+  margin: 10px 15px;
+}
 
 body {
     background-color: $backdrop-color;
     display: grid;
     place-items: center;
+    color: $grey;
   }
   
   #root {
-    max-width: $page-max-width;
+    max-width: $page-width;
     background-color: $front-color;
+  }
+
+  .content {
+    padding: 5px 20px;
   }
   
   .top-bar{
@@ -81,5 +103,25 @@ body {
     }
     &::after {
         clear: both;
+    }
+  }
+
+  .section-title {
+    font-weight: 200;
+    font-size: 20px;
+    color: $grey;
+  }
+
+  .section {
+    margin: 5px 0;
+    .bracket-corner {
+      position: relative;
+      width: 8px;
+      border-bottom: 2px solid $gold;
+    }
+    .section-content {
+      color: $blue-lighten;
+      border-left: 2px solid $gold;
+      padding: 4px 10px;
     }
   }
