@@ -1,18 +1,29 @@
 import React from 'react';
+import {useSpring, animated} from 'react-spring';
+import BracketFolder from '../Components/BracketFolder.js';
 
 function Home(props) {
-    return(
-        <div>
-            <h2>HELLO</h2>
-            <p>Cras facilisis urna ornare ex volutpat, et
-            convallis erat elementum. Ut aliquam, ipsum vitae
-            gravida suscipit, metus dui bibendum est, eget rhoncus nibh
-            metus nec massa. Maecenas hendrerit laoreet augue
-            nec molestie. Cum sociis natoque penatibus et magnis
-            dis parturient montes, nascetur ridiculus mus.</p>
+    const swoop_in = useSpring({
+        from: {
+            opacity: 0,
+            transform: 'translate3d(0,20px,0) scale(1) rotateX(0deg)',
+        },
+        to: {
+            opacity: 1,
+            transform: 'translate3d(0px,0,0) scale(1) rotateX(0deg)',
+        }
+    });
 
-            <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
-        </div>
+    return(
+        <animated.div style={swoop_in}>
+            <div className="flex-row">
+                <div className="flex-main">
+                        <BracketFolder title="Hello," 
+                            text={["ddd"]}>
+                        </BracketFolder>
+                </div>
+            </div>
+        </animated.div>
     )
 }
 
