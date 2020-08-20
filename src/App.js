@@ -5,10 +5,12 @@ import Home from './Pages/Home';
 import CV from './Pages/CV';
 import Projects from './Pages/Projects';
 
+function App(props) {
 
-class App extends Component {
-  render() {
+
+
     return (
+      <>
       <HashRouter>
       <div className="top-bar">
         <h1>fluffycode</h1>
@@ -21,15 +23,21 @@ class App extends Component {
             <li><NavLink to="/projects"><div className="brackets" />Projects</NavLink></li>
           </ul>
         </div>
+      <div>
         <div className="content">
           <Route exact path="/" component={Home}/>
           <Route path="/cv" component={CV}/>
           <Route path="/projects" component={Projects}/>
         </div>
       </div>
+      </div>
       </HashRouter>
+      <div className="footer">
+        
+      </div>
+      </>
     )
-  }
+
 }
 
 export default App;
