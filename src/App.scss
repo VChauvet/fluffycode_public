@@ -18,6 +18,7 @@ $page-width: 800px;
     flex-direction: row !important;
     align-items: flex-start !important;
     align-content: flex-start !important;
+    margin-top: 0px !important;
   }
   .portrait {
     top: 0 !important;
@@ -214,6 +215,7 @@ body {
     flex: 30%;
     padding: 5px 20px 30px;
     min-width: 170px;
+    margin-top: -44px;
   }
 }
 

@@ -67,7 +67,7 @@ function CV () {
                     
                     <TimeLineJobs yearRange={{from:2012,to:2020}} jobs={[
                         {year:2012,month:2,length:30, name:"UNIVERSITY OF APPLIED SCIENCES",text:"5 semester of Computer Science (bachelor course)"}
-                        ,{year:2015,month:3, length:26, name:"ONDICS GMBH",text:"Apprenticeship - Software Developerweb developmentsoftware developmentproject management"}
+                        ,{year:2015,month:3, length:26, name:"ONDICS GMBH",text:["Apprenticeship - Software Developer",<br/>,"web development",<br/>,"software development",<br/>,"project management"]}
                         ,{year:2017,month:7, length:2, name:"ONDICS GMBH",text:"Web Developer"}
                         ,{year:2017,month:10, length:14, name:"WORK & TRAVEL",text:"New Zealand, Indonesia"}
                         ,{year:2019,month:4, length:12, name:"TELEPERFORMANCE PORTUGAL",text:"Google Ads Consultant / Specialist technical support, marketing optimization"}
