@@ -45,7 +45,7 @@ $front-color: $beige;
 $topbar-color: $blue;
 $topbar-font-color: $gold;
 $basic-font-color: black;
-$menu-font-color: $beige;
+$menu-font-color: lighten($grey, 45);
 $menu-background-color: $grey;
 $menu-active-font-color: $gold;
 $menu-active-background-color: $blue;
